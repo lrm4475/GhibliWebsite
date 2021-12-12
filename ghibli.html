@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	  <meta charset="utf-8" />
+ 	  <title>Ghibli Films</title>
+    <link rel="stylesheet" href="styles/main.css"> 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="https://people.rit.edu/ltd3086/230/project2/images/favicon.ico"/>  
+</head>
+    <body>
+      <img id = "logo" src="images/logo.png" alt="Ghibli" height="230" width="521">
+
+      <div id = inputs>
+        <input type="text" id="searchInput" placeholder="Search for films..">
+          
+        <div id="popUp" class="modal">
+            <div class="modal-content">
+<!--                create span for pop-up, as well as an "X" to close-->
+                <span class="close">&times;</span>
+                <p id="popUpMsg"></p>
+            </div>  
+        </div>  
+          
+        <select id="selectInput">
+          <option value="Any">Any Director</option>
+          <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+          <option value="Isao Takahata">Isao Takahata</option>
+          <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
+          <option value="Hiroyuki Morita">Hiroyuki Morita</option>
+          <option value="Gorō Miyazaki">Gorō Miyazaki</option>
+          <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
+        </select>
+          
+          <h4>Region:</h4>
+          <form id="radioForm">
+            <input type="radio" id="us" name="region" value="us" selected> <label for="us"> United States </label>
+            <input type="radio" id="ca" name="region" value="ca"> <label for="ca"> Canada </label>
+            <input type="radio" id="uk" name="region" value="uk"> <label for="uk"> United Kingdom </label>
+            <input type="radio" id="jp" name="region" value="jp"> <label for="jp"> Japan </label>
+          </form>
+            
+        <button id="searchButton" type="button">Search</button>
+        <button id="resetButton" type="button">Reset</button>  
+      </div>
+
+      <div id="buttons">
+        <button id = "previous" type="button">Previous</button>
+        <button id = "next" type="button">Next</button>
+          <button id = "test" type="button">Test</button>
+      </div>
+
+      <div id="root">
+      </div>  
+      <script src="js/main.js"></script>
+    </body>
+</html>
